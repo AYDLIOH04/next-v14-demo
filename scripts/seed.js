@@ -161,8 +161,8 @@ async function seedRevenue() {
 }
 
 (async () => {
+  await seedInvoices();
+  await seedRevenue();
   await seedUsers();
   await seedCustomers();
-  await seedRevenue();
-  await seedInvoices();
 })();
